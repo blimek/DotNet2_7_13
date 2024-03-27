@@ -40,7 +40,15 @@ namespace DotNet2_7_13
                     Console.WriteLine($"Wynik odejmowania to: {a - b}");
                     break;
                 case 3:
-                    Console.WriteLine($"Wynik dzielenia to: {a % b}");
+                    if (b != 0)
+                    {
+                        Console.WriteLine($"Wynik dzielenia to: {(a / b)}");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Nie dzielimy przez zero");
+                    }
                     break;
                 case 4:
                     Console.WriteLine($"Wynik mnożenia to: {a * b}");
@@ -50,6 +58,8 @@ namespace DotNet2_7_13
                     break;
 
             }
+            
+            
             Console.ReadLine();
 
 
